@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3e3e3e;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.infoBox {
+  text-align: center;
+  border: solid 2px #3e3e3e;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.infoBox::before {
+  position: absolute;
+  left: 0;
+  top: -25px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#currentTitle::before {
+  content: "Current Tab Title";
+}
+
+#newTitle::before {
+  content: "New Title";
+}
+
+#intervalAmount::before {
+  content: "Time between message change.";
+}
