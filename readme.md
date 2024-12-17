@@ -8,7 +8,7 @@ The intention is to drive people back to the page with some kind of message like
 
 ## How it works
 
-I am using `document.addEventListener` with `visibilityChange`. When the tab's visibility changes and is set to hidden (i.e. the customer keeps the tab open, but just goes to a new tab in general), then a new message will replace the current page's title.
+I am using `document.addEventListener` with `visibilityChange`. When the tab's visibility changes and is set to "hidden" (i.e. the customer keeps the tab open, but just goes to a new tab in general), then a new message will replace the current page's title.
 
 This new title will swap back and forth with the original title every X milliseconds, adjustable with a variable.
 
